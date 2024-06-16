@@ -47,6 +47,10 @@ li {
   padding: 0;
 }
 
+.seo-link {
+  display: inline;
+}
+
 .hdr,
 .ftr {
   position: relative;
