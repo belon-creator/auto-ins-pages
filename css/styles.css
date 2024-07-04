@@ -18,6 +18,10 @@ a {
   display: block;
 }
 
+p {
+  line-height: 1.8rem;
+}
+
 h1,
 h2,
 h3,
