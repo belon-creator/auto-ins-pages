@@ -126,6 +126,11 @@ body {
   margin-bottom: 60px;
 }
 
+.accent-heading {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .ftr {
   display: flex;
   flex-direction: column;
