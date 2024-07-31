@@ -108,6 +108,13 @@ body {
   justify-content: center;
 }
 
+.banner-au {
+  background-image: url(../img/5282805552583403091.jpg);
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .btn {
   background-color: #133fda;
   color: #fff;
@@ -157,5 +164,10 @@ body {
   .banner,
   .banner-bottom {
     background-image: url(../img/mob-banner.png);
+  }
+
+  .banner-au {
+    background-image: url(../img/5282805552583403091.jpg);
+    /* background-size: contain; */
   }
 }
