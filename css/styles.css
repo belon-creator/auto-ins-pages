@@ -160,6 +160,19 @@ body {
   display: flex;
 }
 
+.hidden-title{
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.visual-seo-link{
+  color: #8d8ffc;
+}
 @media (max-width: 768px) {
   .container {
     padding: 20px 8px;
