@@ -147,6 +147,12 @@ body {
   text-align: center;
 }
 
+.list-item-kasko-decor {
+  margin: 16px;
+  /* padding: 16px;  */
+  text-align: left;
+}
+
 .ftr {
   display: flex;
   flex-direction: column;
@@ -158,6 +164,18 @@ body {
 
 .social {
   display: flex;
+}
+
+.cta-social-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.cta-social-block-links{
+  display: flex;
+justify-content: center;
 }
 
 .hidden-title{
