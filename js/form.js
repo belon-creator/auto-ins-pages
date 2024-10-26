@@ -32,7 +32,7 @@ orderForm.addEventListener('submit', async (e) => {
     const product = productName.textContent;
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbxt9Aq_uz0IkhmUvsn0j2WoDJMY_vlldOcm4wOec53-NgjOdpWtn7lwQsxhhwZH3IOB/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbwZotTl1fUUa4ONv8gSAochPOUpIKJPH0080MS9nI3ROzZwKl_bkVcBrkocwiandKtr/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
