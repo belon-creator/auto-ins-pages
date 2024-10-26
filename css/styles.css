@@ -51,6 +51,11 @@ li {
   padding: 0;
 }
 
+.sublist{
+  margin: 0;
+  padding: 0;
+}
+
 .seo-link {
   display: inline;
 }
@@ -149,7 +154,7 @@ body {
 
 .list-item-kasko-decor {
   margin: 16px;
-  /* padding: 16px;  */
+  /* padding: 6px;  */
   text-align: left;
 }
 
@@ -192,6 +197,45 @@ justify-content: center;
   color: #8d8ffc;
 }
 
+.order-btn{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px;
+  width: 90%;
+  background-color: rgb(252, 217, 34);
+  color: rgb(7, 7, 7);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;   
+  font-weight: 600;
+}
+
+.submit-kasko-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px;
+  width: 90%;
+  background-color: #0c08fc;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;   
+  font-weight: 600;
+  
+}
+
+.ekasko-title{
+  text-align: left;
+}
+
 /* форма */
 
 .overlay {
@@ -210,11 +254,27 @@ justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%, -50%);
-  background: white;
+  /* background: white; */
   padding: 20px;
   border-radius: 8px;
   z-index: 20;
+  background-color: rgb(188, 195, 231);
+}
+
+.form-container input {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 15px; 
+  border: none; 
+  border-bottom: 2px solid #020202; 
+  outline: none; 
+  background-color: rgb(188, 195, 231);
+}
+
+.product-kasko-name{
+  color: #020202;
 }
 
 #order-form label {
@@ -231,7 +291,7 @@ justify-content: center;
 button {
   margin-top: 15px;
   padding: 10px;
-  background-color: #28a745;
+  background-color: rgb(252, 217, 34);
   color: white;
   border: none;
   cursor: pointer;
