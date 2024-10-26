@@ -1,57 +1,52 @@
-const orderButtons = document.querySelectorAll('.order-btn');
-const formContainer = document.querySelector('.form-container');
-const overlay = document.querySelector('.overlay');
-const productName = document.getElementById('product-name');
-const orderForm = document.getElementById('order-form');
-const closeFormButton = document.getElementById('close-form');
 
-orderButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const product = button.getAttribute('data-product');
-        productName.textContent = product;
-        formContainer.style.display = 'block';
-        overlay.style.display = 'block';
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const orderButtons = document.querySelectorAll(".order-btn");
+    const overlay = document.querySelector(".overlay");
+    const formContainer = document.querySelector(".form-container");
+    const form = document.getElementById("order-form");
+    const productNameEl = document.getElementById("product-name");
+
+    // Відкриття форми при натисканні кнопки "Оформити"
+    orderButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            const productName = event.target.getAttribute("data-product");
+            productNameEl.textContent = `Оформлення для ${productName}`;
+            formContainer.style.display = "block"; // Показати форму
+            overlay.style.display = "block"; // Показати оверлей
+        });
     });
-});
 
-closeFormButton.addEventListener('click', () => {
-    formContainer.style.display = 'none';
-    overlay.style.display = 'none';
-});
+    // Закриття форми при натисканні кнопки "Закрити"
+    document.getElementById("close-form").addEventListener("click", () => {
+        formContainer.style.display = "none";
+        overlay.style.display = "none";
+    });
 
-overlay.addEventListener('click', () => {
-    formContainer.style.display = 'none';
-    overlay.style.display = 'none';
-});
+    // Надсилання форми
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const productName = productNameEl.textContent.replace("Оформлення для ", "");
 
-orderForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const product = productName.textContent;
-
-    try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwZotTl1fUUa4ONv8gSAochPOUpIKJPH0080MS9nI3ROzZwKl_bkVcBrkocwiandKtr/exec', {
-            method: 'POST',
+        // Надсилання даних до Google Apps Script
+        const response = await fetch("https://script.google.com/macros/s/AKfycbwiSPanPPtHfTLWCHHuWWmRLKwzE2Ve9jrSn23vE9BL6UyHXw0nF_p4c3IX5ehfccj6dA/exec", {
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json",
             },
-            body: JSON.stringify({ name, phone, product })
+            body: JSON.stringify({ name, phone, productName }),
+            
         });
 
         if (response.ok) {
-            alert('Дані надіслано!');
-            orderForm.reset(); // Очистка полів
-            formContainer.style.display = 'none'; // Закрити форму
-            overlay.style.display = 'none'; // Закрити фон
+            alert("Дані успішно відправлено!");
+            formContainer.style.display = "none";
+            overlay.style.display = "none";
         } else {
-            alert('Сталася помилка. Спробуйте ще раз.');
+            alert("Помилка при відправленні даних.");
         }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Сталася помилка. Спробуйте ще раз.');
-    }
+    });
 });
-
-
