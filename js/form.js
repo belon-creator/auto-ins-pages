@@ -69,7 +69,10 @@ document.getElementById("order-form").addEventListener("submit", function (e) {
     emailjs.send("service_k4tag2s", "template_anu6odh", templateParams)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
-            alert("Наші спеціалісти зв'яжуться з Вами найближчим часом!");
+
+            setTimeout(() => {
+                window.location.href = "https://auto-ins.com.ua/pages/dyakuyemo-za-zamovlennya/";
+            }, 500);
 
             // Очищення полів після успішної відправки
             document.getElementById("name").value = '';

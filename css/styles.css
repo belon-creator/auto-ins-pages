@@ -58,6 +58,13 @@ li {
 
 .seo-link {
   display: inline;
+
+}
+
+.seo-link-thnk-pg{
+  margin: 6px;
+  padding: 8px;
+  color: #8d8ffc;
 }
 
 .hdr,
