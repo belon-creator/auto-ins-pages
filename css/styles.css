@@ -254,13 +254,29 @@ justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 90%;
+  width: 60%;
   transform: translate(-50%, -50%);
-  /* background: white; */
   padding: 20px;
-  border-radius: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
   z-index: 20;
   background-color: rgb(188, 195, 231);
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  margin: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #ff0000;
 }
 
 .form-container input {
@@ -271,6 +287,24 @@ justify-content: center;
   border-bottom: 2px solid #020202; 
   outline: none; 
   background-color: rgb(188, 195, 231);
+}
+
+.require{
+  color: #fc051d;
+}
+
+.comment{
+  padding-bottom: 16px;
+}
+
+.comment-area{
+  min-height: 110px;
+  width: 100%;
+  background-color: rgb(188, 195, 231);
+color: #000;
+border: 2px solid #000;
+border-radius: 16px;
+padding: 8px;
 }
 
 .product-kasko-name{
@@ -298,7 +332,7 @@ button {
 }
 
 button#close-form {
-  background-color: #dc3545;
+  background-color: transparent;
 }
 
 /* форма */
@@ -308,9 +342,9 @@ button#close-form {
     max-width: 100%;
   }
 
-  /* .hdr {
-    height: 40px;
-  } */
+  .form-container{
+width: 90%;
+  }
 
   .banner,
   .banner-bottom {
