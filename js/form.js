@@ -23,6 +23,7 @@ orderButtons.forEach(button => {
     });
 });
 
+
 // Обробка події відправлення форми
 document.getElementById("order-form").addEventListener("submit", function (e) {
     e.preventDefault(); // Зупинити стандартну поведінку форми

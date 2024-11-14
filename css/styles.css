@@ -45,6 +45,18 @@ li {
   margin: 8px;
 }
 
+.info{
+  background-color: #fdfcfc;  
+}
+.info-hdr,
+.info-txt{  
+  color: #2c2c2c;
+}
+.info-txt{
+  margin: 4px;
+  font-size: 14px;
+}
+
 .list {
   list-style: none;
   margin: 0;
