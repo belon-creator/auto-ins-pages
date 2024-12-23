@@ -70,6 +70,7 @@ li {
 
 .seo-link {
   display: inline;
+  color: #8d8ffc;
 
 }
 
@@ -351,10 +352,40 @@ button {
 }
 
 button#close-form {
-  background-color: transparent;
+  background-color: transparent;  
 }
 
 /* форма */
+
+/* таблиця порівнянь ціни */
+
+.comparison {
+  width: 100%;
+  background-color: rgb(188, 195, 231);
+  border-collapse: collapse;
+      text-align: center;
+
+}
+
+th, td {
+  border: 1px solid #080808;
+  padding: 8px;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #080808;
+}
+.table-sub-header {
+  font-style: italic;
+  color: #080808;
+margin: 4px;
+}
+
+.ins-condiditions{
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px 8px;
