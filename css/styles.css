@@ -45,14 +45,14 @@ li {
   margin: 8px;
 }
 
-.info{
-  background-color: #fdfcfc;  
+.info {
+  background-color: #fdfcfc;
 }
 .info-hdr,
-.info-txt{  
+.info-txt {
   color: #2c2c2c;
 }
-.info-txt{
+.info-txt {
   margin: 4px;
   font-size: 14px;
 }
@@ -63,7 +63,7 @@ li {
   padding: 0;
 }
 
-.sublist{
+.sublist {
   margin: 0;
   padding: 0;
 }
@@ -71,10 +71,9 @@ li {
 .seo-link {
   display: inline;
   color: #8d8ffc;
-
 }
 
-.seo-link-thnk-pg{
+.seo-link-thnk-pg {
   margin: 6px;
   padding: 8px;
   color: #8d8ffc;
@@ -192,18 +191,18 @@ body {
 }
 
 .cta-social-block {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.cta-social-block-links{
   display: flex;
-justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hidden-title{
+.cta-social-block-links {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden-title {
   margin: 0;
   padding: 0;
   width: 0;
@@ -213,11 +212,11 @@ justify-content: center;
   font-size: 0;
 }
 
-.visual-seo-link{
+.visual-seo-link {
   color: #8d8ffc;
 }
 
-.order-btn{
+.order-btn {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -230,7 +229,7 @@ justify-content: center;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 1rem;   
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -247,12 +246,11 @@ justify-content: center;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 1rem;   
+  font-size: 1rem;
   font-weight: 600;
-  
 }
 
-.ekasko-title{
+.ekasko-title {
   text-align: left;
 }
 
@@ -300,34 +298,34 @@ justify-content: center;
 }
 
 .form-container input {
-  width: 100%; 
+  width: 100%;
   padding: 10px;
-  margin-bottom: 15px; 
-  border: none; 
-  border-bottom: 2px solid #020202; 
-  outline: none; 
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #020202;
+  outline: none;
   background-color: rgb(188, 195, 231);
 }
 
-.require{
+.require {
   color: #fc051d;
 }
 
-.comment{
+.comment {
   padding-bottom: 16px;
 }
 
-.comment-area{
+.comment-area {
   min-height: 110px;
   width: 100%;
   background-color: rgb(188, 195, 231);
-color: #000;
-border: 2px solid #000;
-border-radius: 16px;
-padding: 8px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 8px;
 }
 
-.product-kasko-name{
+.product-kasko-name {
   color: #020202;
 }
 
@@ -352,7 +350,7 @@ button {
 }
 
 button#close-form {
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 /* форма */
@@ -363,11 +361,12 @@ button#close-form {
   width: 100%;
   background-color: rgb(188, 195, 231);
   border-collapse: collapse;
-      text-align: center;
-
+  text-align: center;
+  border-radius: 16px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #080808;
   padding: 8px;
 }
@@ -379,10 +378,10 @@ th, td {
 .table-sub-header {
   font-style: italic;
   color: #080808;
-margin: 4px;
+  margin: 4px;
 }
 
-.ins-condiditions{
+.ins-condiditions {
   text-align: left;
 }
 
@@ -392,8 +391,8 @@ margin: 4px;
     max-width: 100%;
   }
 
-  .form-container{
-width: 90%;
+  .form-container {
+    width: 90%;
   }
 
   .banner,
