@@ -132,8 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const commentInput = document.getElementById('comments');
   const submitButton = document.querySelector('.submit-kasko-btn');
   const productName = document.getElementById('product-name');
-  const sheetURL =
-    'https://script.google.com/macros/s/AKfycbxsIwk1sg64ZAjxCgRc10-m9NYrzfAjxS9PhdqqKjHCVZnekKZ7OojW0h9rVCTD5UC75g/exec'; // Замініть на ваш URL
+  const sheetURL = "https://script.google.com/macros/s/AKfycbxCTe53jo6wZSqsKCwhHHTodDNNC9GG_oK1rB463AwSvsBKbBal5ssFMRb_lZifaWmt2w/exec";
 
   // Відкриття модального вікна
   document.querySelectorAll('.order-btn').forEach(button => {
