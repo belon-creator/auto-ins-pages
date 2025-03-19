@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitButton = document.querySelector('.submit-kasko-btn');
   const productName = document.getElementById('product-name');
   const webAppUrl =
-    'https://script.google.com/macros/s/AKfycbx8CJLjxruDHrR7x_mAyXCKezEkSfjOTNyE5XM9ItRzWqFDPf79t2E_AV0RO_sw3lszzQ/exec';
+    'https://script.google.com/macros/s/AKfycbxirMatQI9AkswAaKpBtsh7_pFsLDANnsHSXiHDW8NhqIFddBXgGAOp-LSqZgU1g-5x3Q/exec';
 
   document.querySelectorAll('.order-btn').forEach(button => {
     button.addEventListener('click', function () {
@@ -30,16 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', closeForm);
   closeFormButton.addEventListener('click', closeForm);
 
-  phoneInput.addEventListener('input', function (e) {
+  phoneInput.addEventListener('input', function () {
     if (!this.value.startsWith('+380')) {
       this.value = '+380';
     }
   });
 
   function toggleSubmitButton() {
-    submitButton.disabled = !(
-      nameInput.value.trim() && phoneInput.value.length === 13
-    );
+    submitButton.disabled = !(nameInput.value.trim() && phoneInput.value.length === 13);
   }
 
   nameInput.addEventListener('input', toggleSubmitButton);
@@ -59,16 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Дані, отримані від сервера:', data);
-        if (data.result === 'success') {
-          window.location.href =
-            'https://auto-ins.com.ua/pages/dyakuyemo-za-zamovlennya/';
-        } else {
-          alert('Помилка відправки.');
-        }
+      .then(() => {
+        console.log('Форма успішно відправлена!');
+        window.location.href =
+          'https://auto-ins.com.ua/pages/dyakuyemo-za-zamovlennya/';
       })
       .catch(error => {
         console.error('Помилка:', error);
