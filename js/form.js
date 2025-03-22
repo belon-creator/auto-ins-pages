@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitButton = document.querySelector('.submit-kasko-btn');
   const productName = document.getElementById('product-name');
   const webAppUrl =
-    'https://script.google.com/macros/s/AKfycbxirMatQI9AkswAaKpBtsh7_pFsLDANnsHSXiHDW8NhqIFddBXgGAOp-LSqZgU1g-5x3Q/exec';
+    'https://script.google.com/macros/s/AKfycbzBgDLTj0-UiiwRdu_P2W9Od_KmrKa3nRFBS6DAQtBidwIN_qR851wh2VujIQ8pCw1r7A/exec';
 
   document.querySelectorAll('.order-btn').forEach(button => {
     button.addEventListener('click', function () {
@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function toggleSubmitButton() {
-    submitButton.disabled = !(nameInput.value.trim() && phoneInput.value.length === 13);
+    submitButton.disabled = !(
+      nameInput.value.trim() && phoneInput.value.length === 13
+    );
   }
 
   nameInput.addEventListener('input', toggleSubmitButton);
