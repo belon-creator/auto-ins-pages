@@ -254,6 +254,13 @@ body {
   text-align: left;
 }
 
+.companies-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
 /* форма */
 
 .overlay {
