@@ -70,7 +70,7 @@ orderForm.addEventListener('submit', function (e) {
       function (error) {
         console.log('FAILED...', error);
         alert(
-          'Виникла помилка при відправці замовлення. Будь ласка, спробуйте пізніше.',
+          'Виникла помилка при відправці замовлення. Будь ласка, напишіть нам повідомлення.',
         );
       },
     );
@@ -86,6 +86,28 @@ phoneInput.addEventListener('input', function () {
     this.value = '+380';
   }
 });
+
+// Закриття форми
+function closeForm() {
+  document.querySelector('.overlay').style.display = 'none';
+  document.querySelector('.form-container').style.display = 'none';
+  document.getElementById('order-form').reset(); // Очистити форму
+}
+
+// Кнопка "×"
+document.querySelector('.close-btn').addEventListener('click', closeForm);
+
+// Кнопка "Закрити"
+document.getElementById('close-form').addEventListener('click', closeForm);
+
+// Закриття при кліку по оверлею, але не по формі
+document.querySelector('.overlay').addEventListener('click', function (event) {
+  const formContainer = document.querySelector('.form-container');
+  if (!formContainer.contains(event.target)) {
+    closeForm();
+  }
+});
+
 
 // відправка в гугл док
 // document.addEventListener('DOMContentLoaded', function () {
