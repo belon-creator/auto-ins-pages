@@ -392,6 +392,31 @@ td {
   text-align: left;
 }
 
+/* Стилі для елемента quote */
+.vivid-quote {
+    /* Відступи навколо цитати */
+    margin: 20px 0;
+    padding: 15px 20px;
+    
+    /* Колір фону для виділення */
+    background-color: rgb(188, 195, 231); 
+    border-radius: 8px;
+    /* Основна фішка: товста вертикальна лінія зліва */
+    border-left: 5px solid #007bff; /* Яскраво-синя лінія */
+    
+    /* Шрифт */
+    font-size: 1.15em; /* Трохи більший розмір тексту */
+    font-style: italic; /* Курсив для кращого виділення */
+    line-height: 1.5;
+    color: #333; /* Темний колір тексту */
+}
+
+/* Додатково: прибираємо стандартні відступи вкладеного абзацу, 
+   хоча у вашому прикладі його немає */
+.vivid-quote p {
+    margin: 0;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px 8px;
