@@ -415,6 +415,8 @@ td {
    хоча у вашому прикладі його немає */
 .vivid-quote p {
     margin: 0;
+        color: #080808;
+
 }
 
 @media (max-width: 768px) {
