@@ -88,8 +88,7 @@ li {
 .container {
   padding: 40px 30px;
   max-width: 960px;
-  margin: 0 auto; 
-
+  margin: 0 auto;
 }
 
 body {
@@ -166,9 +165,12 @@ body {
 .list-item-decor {
   margin: 16px;
   padding: 16px;
-  background-color: rgb(188, 195, 231);  
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 2px 0px 5px rgba(0, 0, 0, 0.2),
-    2px 2px 5px rgba(0, 0, 0, 0.2) inset, -2px -2px 5px white inset;
+  background-color: rgb(188, 195, 231);
+  box-shadow:
+    0px 2px 5px rgba(0, 0, 0, 0.2),
+    2px 0px 5px rgba(0, 0, 0, 0.2),
+    2px 2px 5px rgba(0, 0, 0, 0.2) inset,
+    -2px -2px 5px white inset;
   border-radius: 16px;
   text-align: center;
 }
@@ -181,7 +183,6 @@ body {
 .list-item-decor h6 {
   color: #080808;
 }
-
 
 .list-item-kasko-decor {
   margin: 16px;
@@ -406,29 +407,28 @@ td {
 
 /* Стилі для елемента quote */
 .vivid-quote {
-    /* Відступи навколо цитати */
-    margin: 20px 0;
-    padding: 15px 20px;
-    
-    /* Колір фону для виділення */
-    background-color: rgb(188, 195, 231); 
-    border-radius: 8px;
-    /* Основна фішка: товста вертикальна лінія зліва */
-    border-left: 5px solid #007bff; /* Яскраво-синя лінія */
-    
-    /* Шрифт */
-    font-size: 1.15em; /* Трохи більший розмір тексту */
-    font-style: italic; /* Курсив для кращого виділення */
-    line-height: 1.5;
-    color: #333; /* Темний колір тексту */
+  /* Відступи навколо цитати */
+  margin: 20px 0;
+  padding: 15px 20px;
+
+  /* Колір фону для виділення */
+  background-color: rgb(188, 195, 231);
+  border-radius: 8px;
+  /* Основна фішка: товста вертикальна лінія зліва */
+  border-left: 5px solid #007bff; /* Яскраво-синя лінія */
+
+  /* Шрифт */
+  font-size: 1.15em; /* Трохи більший розмір тексту */
+  font-style: italic; /* Курсив для кращого виділення */
+  line-height: 1.5;
+  color: #333; /* Темний колір тексту */
 }
 
 /* Додатково: прибираємо стандартні відступи вкладеного абзацу, 
    хоча у вашому прикладі його немає */
 .vivid-quote p {
-    margin: 0;
-        color: #080808;
-
+  margin: 0;
+  color: #080808;
 }
 
 @media (max-width: 768px) {
