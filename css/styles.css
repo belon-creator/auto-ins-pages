@@ -88,7 +88,8 @@ li {
 .container {
   padding: 40px 30px;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto; 
+
 }
 
 body {
@@ -165,11 +166,22 @@ body {
 .list-item-decor {
   margin: 16px;
   padding: 16px;
+  background-color: rgb(188, 195, 231);  
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 2px 0px 5px rgba(0, 0, 0, 0.2),
     2px 2px 5px rgba(0, 0, 0, 0.2) inset, -2px -2px 5px white inset;
   border-radius: 16px;
   text-align: center;
 }
+
+.list-item-decor p,
+.list-item-decor h2,
+.list-item-decor h3,
+.list-item-decor h4,
+.list-item-decor h5,
+.list-item-decor h6 {
+  color: #080808;
+}
+
 
 .list-item-kasko-decor {
   margin: 16px;
